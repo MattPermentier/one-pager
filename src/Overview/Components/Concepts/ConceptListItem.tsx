@@ -10,7 +10,10 @@ export default function ConceptListItem(props: IProps) {
     const { title, color, icon} = props;
 
     return (
-        <Card sx={{ width: '100%', borderRadius: 3 }}>
+        <Card sx={{ width: '100%', borderRadius: 3, ':hover': {
+            transition: 'transform 0.25s ease-in-out',
+            transform: 'scale3d(1.05, 1.05, 1)'
+        }, }}>
             <CardContent sx={{ bgcolor: color, height: 65 }}>
                 <Typography variant='h5' fontWeight='bold' mt={.5}>{title}</Typography>
             </CardContent>

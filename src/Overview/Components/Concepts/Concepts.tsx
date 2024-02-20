@@ -6,8 +6,8 @@ import interactiveIcon from '../../Assets/interactive.png';
 
 export default function Concepts() {
     return ( 
-        <Box mx={30} mt={10}>
-            <Typography variant='h5' fontWeight='bold' mb={5}>Concepten</Typography>
+        <Box mx={30} mt={8}>
+            <Typography variant='h5' fontWeight='bold' mb={2}>Concepten</Typography>
             
             <Stack direction='row' justifyContent='space-between' gap={3}>
                 <ConceptListItem 
