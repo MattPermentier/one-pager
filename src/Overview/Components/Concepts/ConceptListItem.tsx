@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography } from '@mui/material';
+import { Card, CardContent, Stack, Typography } from '@mui/material';
 
 interface IProps {
     title: string;
@@ -15,7 +15,7 @@ export default function ConceptListItem(props: IProps) {
                 <Typography variant='h5' fontWeight='bold' mt={.5}>{title}</Typography>
             </CardContent>
 
-            <CardContent sx={{ bgcolor: '#20252B', height: 250 }}>
+            <CardContent sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center', bgcolor: '#20252B', height: 250 }}>
                 <img src={icon} style={{ width: 200}}/>
             </CardContent>
         </Card>
